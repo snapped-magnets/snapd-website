@@ -191,8 +191,8 @@
             transition: var(--transition);
         }
         .carousel-btn:hover { background: rgba(13, 13, 13, 0.95); color: #fff; transform: translateY(-50%) scale(1.05); }
-        .carousel-btn.next-btn { left: 15px; } /* בצד שמאל להחלקה הבאה */
-        .carousel-btn.prev-btn { right: 15px; } /* בצד ימין להחלקה הקודמת */
+        .carousel-btn.next-btn { right: 15px; } /* בצד שמאל להחלקה הבאה */
+        .carousel-btn.prev-btn { left: 15px; } /* בצד ימין להחלקה הקודמת */
         
         .carousel-dots {
             position: absolute;
@@ -377,7 +377,7 @@
         dots[currentIndex].classList.add('active');
     }
 
-    function nextSlide() {
+    function prevSlide() {
         if (currentIndex < slides.length - 1) {
             goToSlide(currentIndex + 1);
         } else {
@@ -385,7 +385,7 @@
         }
     }
 
-    function prevSlide() {
+    function nextSlide() {
         if (currentIndex > 0) {
             goToSlide(currentIndex - 1);
         } else {
