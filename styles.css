@@ -149,6 +149,7 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; color: var(--accent-elegant); }
 }
 .carousel-track {
     display: flex;
+    direction: ltr;
     height: 100%;
     transition: transform 0.4s ease-in-out;
 }
@@ -190,6 +191,7 @@ h2 { font-size: 2.5rem; margin-bottom: 30px; color: var(--accent-elegant); }
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    direction: ltr;
     gap: 8px;
     z-index: 10;
     flex-wrap: wrap;
