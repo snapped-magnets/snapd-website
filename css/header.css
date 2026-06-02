@@ -1,6 +1,7 @@
 .header {
     position: fixed;       
     top: 0;
+    left: 0;
     width: 100%; 
     z-index: 1000; 
     
@@ -39,8 +40,22 @@ a:hover {
     transform: translateY(-2px);
 }
 
+
+nav a:has(.logo-img), .logo-link {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
 .logo-img {
     width: 30px;
     display: block;
 }
 
+@media (max-width: 480px) {
+    nav {
+        gap: 15px; 
+    }
+    a {
+        font-size: 1rem;
+    }
+}
