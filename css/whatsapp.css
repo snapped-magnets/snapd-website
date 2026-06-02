@@ -1,0 +1,25 @@
+.floating-wa {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.floating-wa:hover {
+    transform: scale(1.1);
+}
+
+.floating-wa svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}

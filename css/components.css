@@ -1,0 +1,107 @@
+.btn {
+    padding: 15px 45px;
+    background: var(--accent-elegant);
+    color: var(--bg-dark);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: #ffffff;
+    box-shadow: 0 0 20px rgba(233, 220, 183, 0.3);
+}
+
+.photographer-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(233, 220, 183, 0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--accent-elegant);
+}
+
+.service-card {
+    background: var(--card-bg);
+    padding: 35px 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(233, 220, 183, 0.1);
+}
+
+
+#home {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center; 
+    gap: 50px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.video-container {
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid var(--accent-elegant);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 57%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.photographers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid rgba(233, 220, 183, 0.1);
+    opacity: 0.7;
+}

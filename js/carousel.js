@@ -1,11 +1,3 @@
-// Fade effect logic
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('show');
-    });
-}, { threshold: 0.1 });
-document.querySelectorAll('.fade').forEach(el => observer.observe(el));
-
 // Carousel Logic
 const track = document.querySelector('.carousel-track');
 const slides = Array.from(track.children);
