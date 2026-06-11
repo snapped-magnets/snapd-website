@@ -1,0 +1,21 @@
+:root {
+    --bg-dark: #0d0d0d;
+    --accent-elegant: #e9dcb7;
+    --card-bg: #1a1410;
+    --text-light: #f5f0ea;
+    --transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    scroll-behavior: smooth;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+}

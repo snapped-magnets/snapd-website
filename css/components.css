@@ -39,6 +39,12 @@
     border: 1px solid rgba(233, 220, 183, 0.1);
 }
 
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
 
 #home {
     display: flex;
@@ -49,7 +55,7 @@
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 100px 20px 60px 20px; /* Added top padding to prevent header overlap */
 }
 
 .video-container {
@@ -104,4 +110,85 @@ footer {
     text-align: center;
     border-top: 1px solid rgba(233, 220, 183, 0.1);
     opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #home {
+        gap: 30px;
+        padding: 60px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text-block {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-text-block h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .photographers-grid, .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        max-width: 400px; /* Make cards smaller and centered */
+        margin: 0 auto;
+    }
+
+    .photographer-card, .service-card {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        width: 90%;
+        max-width: 300px;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
 }

@@ -6,7 +6,8 @@
     <title>Snapped - צילום אירועים ומגנטים</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">'
+    <link rel="stylesheet" href="css/desktop/main.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="css/mobile/main.css" media="screen and (max-width: 768px)">
     <script type="module" src="js/main.js"></script>
 </head>
 
@@ -18,10 +19,12 @@
 </a>
 
 <header class="header">
-  <nav>
+  <div class="header-logo-container">
     <a href="#home" class="logo-link">
       <img src="assets/branding/logo.png" alt="Company Logo" class="logo-img">
     </a>
+  </div>
+  <nav class="nav-links">
     <a href="#about">קצת עלינו</a>
     <a href="#team"> הצלמים שלנו</a>
     <a href="#services">פתרונות ויזואליים</a>
@@ -46,7 +49,7 @@
 
 <section id="about" class="fade-up">
     <h2>קצת עלינו</h2>
-    <div style="max-width: 800px; margin: 0 auto; font-size: 1.25rem;">
+    <div class="about-text">
         <p>אנחנו נתנאל ורועי.</p>
         <p>מצלמים ומתעדים אירועים - בר מצווה, ימי הולדת ואירועים עסקיים.</p>
         <p>מגיעים, עובדים, ותופסים את הרגעים כמו שהם - בלי יותר מדי דיבורים.</p>
